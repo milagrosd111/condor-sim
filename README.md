@@ -142,32 +142,32 @@ condor-sim/
 
 ### Processing Steps
 
-1. **CORSIKA Simulation** ✅ Complete
+1. **CORSIKA Simulation**
    - 30 gamma-ray showers (primary energy 20-800 GeV)
    - 30 proton showers (primary energy 20-800 GeV)
    - Ground level (5300 m altitude)
    - All particles E > 3 MeV tracked
 
-2. **Data Analysis** ✅ Complete
+2. **Data Analysis**
    - Jupyter notebook: `notebooks/cosmic_rays/corsika_simulation.ipynb`
    - Particle composition analysis
    - Energy/momentum distributions
    - Shower comparison (gamma vs proton)
    - Output: plots saved to `notebooks/cosmic_rays/results/`
 
-3. **Detector Array Simulation** ✅ Complete
+3. **Detector Array Simulation**
    - Jupyter notebook: `notebooks/detection/detector_array_simulation.ipynb`
    - Maps CORSIKA particles to detector units
    - Computes hit rates and energy deposition
    - Output: detector response statistics
 
-4. **Geant4 Detector Simulation** ⏳ In Progress
+4. **Geant4 Detector Simulation**
    - Optical physics simulation for water Cherenkov detector
    - Photon production and propagation
    - Runner scripts: `geant4/scripts/run_*.sh`
    - Output: `geant4/outputs/*/detector_hits.txt`
 
-5. **Final Analysis** ⏳ Pending
+5. **Final Analysis**
    - Jupyter notebook: `notebooks/detection/geant4_simulation.ipynb`
    - Detector performance metrics
    - Gamma-ray discrimination power
@@ -380,5 +380,4 @@ For questions or issues:
 
 ---
 
-**Last Updated**: January 21, 2026  
-**Status**: Core simulations complete, Geant4 detector analysis in progress
+**Last Updated**: January 21, 2026
