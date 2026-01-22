@@ -1,0 +1,36 @@
+# Gamma rays and leptons
+1    gamma
+2    e+
+3    e-
+5    mu+
+6    mu-
+7    pi0
+8    pi+
+9    pi-
+
+# Nuclei
+14   proton
+15   anti-proton
+16   neutron
+17   anti-neutron
+
+# Light nuclei
+18   deuteron
+19   tritium
+20   He-3
+21   He-4 (alpha)
+
+# Heavier nuclei (Z=3-26)
+22   Li
+23   Be
+24   B
+25   C
+26   N
+27   O
+...
+56   Fe
+
+# Special codes
+75   Cherenkov photon
+76   optical photon
+99   undetermined

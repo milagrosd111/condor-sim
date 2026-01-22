@@ -1,0 +1,35 @@
+# Build artifacts
+build/condorSim
+build/CMakeFiles/
+build/CMakeCache.txt
+build/Makefile
+build/cmake_install.cmake
+build/*.log
+
+# Output data (tracked in outputs/ with proper structure)
+build/*.txt
+build/*.csv
+build/*.dat
+build/*.root
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python cache (if any Python scripts added)
+__pycache__/
+*.pyc
+*.pyo
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Temporary files
+*.tmp
+*.temp

@@ -1,0 +1,19 @@
+RUNNR   {run_idx}
+EVTNR   {first_event_idx}
+NSHOW   {n_show}
+PRMPAR  {primary}          # 1 for gamma, 14 for proton
+ESLOPE  -1
+ERANGE  20.0 800.0         # Energy range in GeV for CONDOR
+THETAP  0.0  60.0          # Zenith angle range
+PHIP    -180.0  180.0
+SEED    {seed_1}   0   0
+SEED    {seed_2}   0   0
+OBSLEV  5300.E2            # 5300 m for CONDOR
+MAGNET  {mag_x} {mag_y}    # Chilean magnetic field
+ECUTS   0.3  0.3  0.0  0.0 # Energy cuts in GeV
+LONGI   T  10.0  T  F      # Longitudinal development
+MAXPRT  0
+DIRECT  {dir}
+USER    CONDOR
+DEBUG   F  6  F  1000000
+EXIT

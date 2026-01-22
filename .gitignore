@@ -1,0 +1,59 @@
+# Build artifacts
+build/
+*.o
+*.so
+*.a
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+env/
+venv/
+*.env
+*.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Simulation data (generated)
+corsika/outputs/
+geant4/outputs/
+notebooks/**/results/
+figures/
+
+# CORSIKA distribution (not redistributable)
+corsika/corsika-78050/
+
+# Logs and run outputs
+*.log
+*.long
+*.DAT
+*.root
+*.hdf5
+*.h5
+geant4/batch.log
+
+# Keep required text configs
+!config/input_card_template.txt
+!config/particle_codes.txt
+!config/condor_site.conf

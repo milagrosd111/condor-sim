@@ -1,0 +1,47 @@
+# vis.mac
+# Visualization macro for condor-sim
+# Usage: condorSim --ui (will execute this macro)
+
+# Set some default verbose
+/control/verbose 2
+/control/saveHistory
+
+# Open visualization
+/vis/open OGL 600x600-0+0
+
+# Disable auto refresh and quieten vis messages whilst scene and trajectories are being created:
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+
+# Draw geometry
+/vis/drawVolume
+
+# Specify view angle
+/vis/viewer/set/viewpointVector 1 1 1
+/vis/viewer/set/zoom 1.4
+/vis/viewer/set/style surface
+
+# Draw smooth line-representation of trajectories at end of event,
+# showing points every 5 cm:
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+
+# Many other options are available with /vis/modeling and /vis/scene commands.
+# For example, to select colour by particle ID:
+#/vis/modeling/trajectories/create/drawByParticleID
+#/vis/modeling/trajectories/drawByParticleID-0/set e- blue
+#/vis/modeling/trajectories/drawByParticleID-0/set gamma green
+
+# Axes, etc.
+/vis/scene/add/axes 0 0 0 1 m
+
+# Re-establish auto refreshing and verbosity:
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+
+# For file-based output:
+# /vis/open DAWNFILE
+# /vis/scene/notifyHandlers
+# /vis/viewer/flush
