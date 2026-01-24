@@ -872,7 +872,7 @@ A: ~100-500 Hz per PMT at operating gain. Negligible compared to ~100-200 Hz cos
 | Date | Author | Changes |
 |------|--------|---------|
 | 2026-01-16 | Initial | Created from arXiv:2503.08850v2 + config.py |
-| 2026-01-19 | Milagros | **CRITICAL UPDATE: Specification validation against CONDOR paper** |
+| 2026-01-19 | Updated | **CRITICAL UPDATE: Specification validation against CONDOR paper** |
 | | | - Changed readout from PMT (Hamamatsu R7378) → SiPM (Hamamatsu 14160-6015PS) |
 | | | - Updated PDE from 25% → 32% (critical for digitization) |
 | | | - Added exact SiPM specs: 159,565 pixels, 15 μm pitch, 6×6 mm² active |
